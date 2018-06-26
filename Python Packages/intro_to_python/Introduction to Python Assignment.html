@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html><html><head>
+<base href="file:///storage/Backup/Proyectos/curso_ixperience/template.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><title>Introduction to Python Assignment</title>
+
+<link href="http://strapdownjs.com/v/0.2/themes/cerulean.min.css" rel="stylesheet"><link href="http://strapdownjs.com/v/0.2/strapdown.css" rel="stylesheet"><link href="http://strapdownjs.com/v/0.2/themes/bootstrap-responsive.min.css" rel="stylesheet">
+<link rel="icon" href="">
+
+<script id="savepage-pageloader" type="application/javascript">
+savepage_PageLoader(5);
+"use strict";function savepage_PageLoader(maxframedepth){var resourceMimeType=new Array();var resourceBase64Data=new Array();var resourceBlobUrl=new Array();window.addEventListener("DOMContentLoaded",function(a){createBlobURLs();replaceReferences(0,document.documentElement)},false);function createBlobURLs(){var i,j,binaryString,blobData;var a=new Array();for(i=0;i<resourceMimeType.length;i++){if(typeof resourceMimeType[i]!="undefined"){binaryString=atob(resourceBase64Data[i]);resourceBase64Data[i]="";a.length=0;for(j=0;j<binaryString.length;j++){a[j]=binaryString.charCodeAt(j)}blobData=new Blob([new Uint8Array(a)],{type:resourceMimeType[i]});resourceMimeType[i]="";resourceBlobUrl[i]=window.URL.createObjectURL(blobData)}}}function replaceReferences(a,b){var i,regex1,regex2,csstext,blobData;regex1=/url\(\s*(?:'|")?data:[^;]*;resource=(\d+);base64,(?:'|")?\s*\)/gi;regex2=/data:[^;]*;resource=(\d+);base64,/i;if(b.hasAttribute("style")){csstext=b.style.cssText;b.style.cssText=csstext.replace(regex1,replaceCSSRef)}if(b.localName=="style"){csstext=b.textContent;b.textContent=csstext.replace(regex1,replaceCSSRef)}else if(b.localName=="link"&&(b.rel.toLowerCase()=="icon"||b.rel.toLowerCase()=="shortcut icon")){if(b.href!="")b.href=b.href.replace(regex2,replaceRef)}else if(b.localName=="body"){if(b.background!="")b.background=b.background.replace(regex2,replaceRef)}else if(b.localName=="img"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="input"&&b.type.toLowerCase()=="image"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="audio"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}}else if(b.localName=="video"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}if(b.poster!="")b.poster=b.poster.replace(regex2,replaceRef)}else if(b.localName=="source"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.parentElement.load()}}else if(b.localName=="track"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="object"){if(b.data!="")b.data=b.data.replace(regex2,replaceRef)}else if(b.localName=="embed"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}if(b.localName=="iframe"||b.localName=="frame"){if(a<maxframedepth){if(b.hasAttribute("data-savepage-sameorigin")){blobData=new Blob([decodeURIComponent(b.src.substr(29))],{type:"text/html;charset=utf-8"});b.onload=function(){try{if(b.contentDocument.documentElement!=null){replaceReferences(a+1,b.contentDocument.documentElement)}}catch(e){}};b.src=window.URL.createObjectURL(blobData)}}}else{for(i=0;i<b.children.length;i++)if(b.children[i]!=null)replaceReferences(a,b.children[i])}}function replaceCSSRef(a,b,c,d){return"url("+resourceBlobUrl[+b]+")"}function replaceRef(a,b,c,d){return resourceBlobUrl[+b]}
+}
+</script>
+<meta name="savepage-url" content="file:///storage/Backup/Proyectos/curso_ixperience/template.html">
+<meta name="savepage-title" content="Introduction to Python Assignment">
+<meta name="savepage-date" content="Thu Jun 21 2018 11:51:46 GMT+0200 (CEST)">
+<meta name="savepage-state" content="Standard Items; Used page loader; Retained cross-origin frames; Removed unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="10.3">
+<meta name="savepage-comments" content="">
+</head><body style=""><div class="navbar navbar-fixed-top"><div class="navbar-inner"> <div class="container"> <div id="headline" class="brand">Introduction to Python Assignment</div> </div> </div></div><div class="container" id="content"><h3>Introduction to Python Assignment</h3>
+<p>These simple exercises are designed to help you familiarize with python.</p>
+<h3>FIZZBUZZ</h3>
+<p>This is a classic programming exercise (and one that is asked in many coding interviews). It goes as follows:</p>
+<blockquote>
+<p>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</p>
+</blockquote>
+<h3>Roman numbers</h3>
+<p>Write a function to convert an integer to a roman numeral. </p>
+<h3>Implement ROT13</h3>
+<p>Create an implementation of the rotational cipher, also sometimes called the Caesar cipher.</p>
+<p>The Caesar cipher is a simple shift cipher that relies on transposing all the letters in the alphabet using an integer key between 0 and 26. Using a key of 0 or 26 will always yield the same output due to modular arithmetic. The letter is shifted for as many values as the value of the key.</p>
+<p>A ROT13 on the Latin alphabet would be as follows:</p>
+<pre><code class="prettyprint lang- prettyprinted" style=""><span class="typ">Plain</span><span class="pun">:</span><span class="pln">  abcdefghijklmnopqrstuvwxyz
+</span><span class="typ">Cipher</span><span class="pun">:</span><span class="pln"> nopqrstuvwxyzabcdefghijklm</span></code></pre>
+<p>Create a function can either cipher (a plain message) or decipher (a ciphered message) using ROT13.</p>
+<p>Bonus points, create a function that takes a string (a message we want to hide) and a number of rotations, then prints out the message rotated with the specified number of rotations (<em>hint: check out collections.deque</em>).</p>
+</div>
+<script data-savepage-src="http://strapdownjs.com/v/0.2/strapdown.js" src=""></script>
+
+</body></html>
